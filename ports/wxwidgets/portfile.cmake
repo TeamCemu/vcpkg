@@ -32,6 +32,23 @@ vcpkg_configure_cmake(
         -DwxUSE_LIBTIFF=sys
         -DwxUSE_STL=ON
         -DwxBUILD_DISABLE_PLATFORM_LIB_DIR=ON
+        -DWXWIN_COMPATIBILITY_3_0=OFF
+        -DwxUSE_STD_CONTAINERS=ON
+        -DwxUSE_SOCKETS=OFF
+        -DwxUSE_IPV6=OFF
+        -DwxUSE_FS_ZIP=OFF
+        -DwxUSE_FS_ARCHIVE=OFF
+        -DwxUSE_FS_INET=OFF
+        -DwxUSE_ARCHIVE_STREAMS=OFF
+        -DwxUSE_ZIPSTREAM=OFF
+        -DwxUSE_TARSTREAM=OFF
+        -DwxUSE_PROTOCOL=OFF
+        -DwxUSE_PROTOCOL_FTP=OFF
+        -DwxUSE_PROTOCOL_HTTP=OFF
+        -DwxUSE_URL=OFF
+        -DwxUSE_SOUND=OFF
+        -DwxUSE_WEBVIEW=OFF
+        -DwxUSE_RICHTEXT=OFF
         ${OPTIONS}
 )
 

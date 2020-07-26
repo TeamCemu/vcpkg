@@ -12,6 +12,12 @@ target_include_directories(
 		$<INSTALL_INTERFACE:include>
 )
 
+find_package(glm CONFIG REQUIRED)
+if(NOT GLM_FOUND)
+        message(Error "GLM not found")
+endif(NOT GLM_FOUND)
+target_link_libraries(${PROJECT_NAME} PRIVATE glm)
+
 target_sources(
 	${PROJECT_NAME}
 	PRIVATE

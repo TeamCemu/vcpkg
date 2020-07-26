@@ -6,6 +6,7 @@ vcpkg_from_github(
     REF v1.77
     SHA512 d5ebf4bb5e1ce83b226f2e68b3afe0f0abaeb55245fedf754e5453afd8d1df4dac8b5c47fc284c2588b40d05a55fc191b5e55c7be279c5e5e23f7c5b70150546
     HEAD_REF master
+    PATCHES config.patch
 )
 
 file(COPY ${CMAKE_CURRENT_LIST_DIR}/CMakeLists.txt DESTINATION ${SOURCE_PATH})
